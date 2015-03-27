@@ -1,0 +1,16 @@
+%%-*- mode: erlang -*-
+{application, edoc_mkdocs,
+ [
+  {description, "edoc layout and doclet for mkdocs"},
+  {modules, [
+	     edoc_doclet_mkdocs,
+	     edoc_layout_mkdocs
+	    ]},
+  {applications, [
+		  kernel,
+		  stdlib,
+		  edoc
+		 ]},
+  {vsn, "git"},
+  {registered, []}
+ ]}.
